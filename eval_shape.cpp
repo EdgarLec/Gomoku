@@ -18,7 +18,7 @@ unsigned eval_shape(unsigned count, unsigned open_ends, bool currentTurn)
             return (open_ends == 2) ? WIN_GUARANTEE / 2 : 400;
     case 3:
         if (open_ends == 2)
-            return currentTurn ? 200000 : 400;
+            return currentTurn ? WIN_GUARANTEE / 2 : 400;
         else
             return currentTurn ? 20 : 10;
     case 2:
